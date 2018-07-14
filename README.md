@@ -2,7 +2,7 @@
 
 [Demo](http://lotabout.github.io/very-simple/)
 
-A theme that aimed to be very simple, creatd by [lotabout](https://github.com/lotabout)
+A theme that aimed to be very simple, created by [lotabout](https://github.com/lotabout)
 
 ## Fork
 
@@ -28,7 +28,7 @@ I might change some other things if I feel like it.
 
 ## Installation
 
-Install theme and renderers:
+Install the theme and the renderers:
 
 ```
 git clone https://github.com/lotabout/very-simple themes/very-simple
@@ -36,7 +36,7 @@ npm install hexo-renderer-sass --save
 npm install hexo-renderer-jade --save
 ```
 
-Edit `_config.yml` in hexo root, change `theme` to `very-simple`.
+Edit `_config.yml` in hexo root changing `theme` to `very-simple`.
 
 ## Configuration
 Default config:
