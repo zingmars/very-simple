@@ -4,6 +4,28 @@
 
 A theme that aimed to be very simple, creatd by [lotabout](https://github.com/lotabout)
 
+## Fork
+
+This fork adds additional layouts for `/categories/` and `/tags/` pages listing all of the tags and categories.
+
+To use them, create folders `tags` and `categories` in your sources folder. In those folders create the following files -
+
+```bash
+cat>source/categories/index.md << EOF
+title: "Categories"
+layout: "categories"
+---
+EOF
+
+cat>source/tags/index.md << EOF
+title: "Tags"
+layout: "tags"
+---
+EOF
+```
+
+I might change some other things if I feel like it.
+
 ## Installation
 
 Install theme and renderers:
@@ -74,7 +96,7 @@ very_simple:
   google_adsense_page_level_ads: #Google Adsense Page Level Ads Code
 ```
 
-##Features
+## Features
 
 #### Logo
 You can set a **favicon.ico** for your website, please put it into  `source` folder of hexo directory, recommended size: 32px*32px.

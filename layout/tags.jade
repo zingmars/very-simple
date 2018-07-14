@@ -1,0 +1,15 @@
+extends base
+block title
+  title= page.title + " | " + config.title
+
+block main
+  article
+    .container
+      h1.label-title: = page.title
+      .post
+        if !(page.tag)
+          ul.listing
+            for tag in site.tags.sort('name').toArray()
+              li
+                a(href=url_for(tag.path))= tag.name
+  include _partial/paginator.jade
