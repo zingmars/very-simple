@@ -34,14 +34,14 @@ html
     link(rel='stylesheet', type='text/css', href=root + '/css/normalize.css')
     link(rel='stylesheet', type='text/css', href=root + '/css/highlight.css')
     link(rel='stylesheet', type='text/css', href=root + '/css/very-simple.css')
-    link(rel='stylesheet', type='text/css', href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css")
+    link(rel='stylesheet', type='text/css', href=root + '/css/font-awesome.min.css')
     link(rel='Shortcut Icon', type='image/x-icon',href=url_for('favicon.ico'))
     if config.feed
       link(rel='alternate', type=feed_type, href=url_for(config.feed.path))
-      
+
     if theme.google_adsense_page_level_ads
       script(async, src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
-      script.  
+      script.
          (adsbygoogle = window.adsbygoogle || []).push({
           google_ad_client: "#{theme.google_adsense_page_level_ads}",
           enable_page_level_ads: true
@@ -90,19 +90,19 @@ html
             = '. Powered by '
             a(rel='nofollow', target='_blank', href='https://hexo.io') Hexo
             = '. Theme '
-            a(target='_blank', href='https://github.com/lotabout/very-simple') very-simple
+            a(target='_blank', href='https://github.com/zingmars/very-simple') very-simple
             |.
 
     if theme.fancybox
-      link(rel='stylesheet', type='text/css', href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css")
-      script(src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js")
-      script(src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js")
+      link(rel='stylesheet', type='text/css', href=root + '/css/fancybox/jquery.fancybox.min.css')
+      script(src=root + '/js/jquery.min.js')
+      script(src=root + '/js/jquery.fancybox.pack.js')
 
       script.
         $(document).ready(function() {
             $(".fancybox").fancybox();
         });
-        
+
    if theme.google_analytics
     script.
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

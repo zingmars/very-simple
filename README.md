@@ -6,7 +6,7 @@ A theme that aimed to be very simple, created by [lotabout](https://github.com/l
 
 ## Fork
 
-This fork adds additional layouts for `/categories/` and `/tags/` pages listing all of the tags and categories.
+* This fork adds additional layouts for `/categories/` and `/tags/` pages listing all of the tags and categories.
 
 To use them, create folders `tags` and `categories` in your sources folder. In those folders create the following files -
 
@@ -23,6 +23,8 @@ layout: "tags"
 ---
 EOF
 ```
+
+* This fork doesn't depend on bootcss cdn, which is a Chinese CDN that can be rather slow at times if you're not from China yourself. Instead all dependencies are served locally.
 
 I might change some other things if I feel like it.
 
